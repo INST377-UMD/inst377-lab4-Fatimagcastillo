@@ -1,0 +1,36 @@
+body {
+    background-color:lightskyblue id="word";
+}
+
+.container {
+    width: 100%;
+    text-align: center;
+}
+
+#alertform { 
+    float: left;
+    border: 2px solid white;
+    background-color: purple;
+    padding: 20px; 
+}
+
+#Changecolor {
+    float: right;
+    border: 2px solid white;
+    background-color: purple;
+    padding: 20px; 
+}
+
+#Validateform { 
+    float: left;
+    border: 2px solid white;
+    background-color: purple;
+    padding: 20px; 
+}
+
+#addtext { 
+    float: right;
+    border: 2px solid white;
+    background-color: purple;
+    padding: 20px; 
+}

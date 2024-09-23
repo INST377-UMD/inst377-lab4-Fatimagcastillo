@@ -1,0 +1,72 @@
+ # I was stuck here for hours and re watche the lectures but was unable to understand and do the assignment.
+<html>
+    <head>
+        <title> INST377 - Lab 4 Class Page </title>
+        <link rel = "stylesheet" href="Week4-HTMLLayout-CSS.css">
+    </head>
+
+    <body> 
+         <header>
+            <h1> INST377 - Lab 4 </h1>
+         </header>
+
+    <div class="container">
+        <!-- Alert Me Section -->
+        <div class="section">
+        <form id="alertform"> 
+                <label for="Name">Name:</label>
+                <input type="text" id="Name" required>
+                <button type="button" onclick="alertMe()">Alert Me!</button>
+            </div>
+        </form>
+                <script type="text/javascript">
+                    function formValidation() {
+                        const validationRegex = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]+/;
+                        if(document.contactForm.firstName.value === "") {
+                            document.body.style.backgroundColor = 'orange';
+                            alert('Enter a First Name!!!');
+                            return false;
+                        }
+                        if (validationRegex.test(document.contactForm.firstName.value)) {
+                            document.body.style.backgroundColor = 'red';
+                            alert('How about.... nah :(')
+                            return false
+                        }
+        
+                        return true;
+                    }
+                </script>
+           </div>
+        <!-- Change Color Section -->
+        <div class="section">
+            <form id="changecolor">
+            <button type="button" onclick="changeColor()">Change Color</button>
+            <script type = "text/javascript"> 
+                function ChangeColor (){
+                   document.getElementById('word')
+                }
+            </script>
+            </form>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Text Tester Section -->
+        <div class="section">
+            <form id="validateForm">
+                <label for="textInput">Text Tester:</label>
+                <input type="text" id="textInput">
+                <button type="button" onclick="validateText()">Validate Text</button>
+            </form>
+        </div>
+        <br> 
+        <!-- Add Text Section -->
+        <div class="section">
+            <form id="Addtext">
+            <button type="button" onclick="addText()">Add Text</button>
+            </form>
+        </div>
+    </div>
+
+    </body>
+</html>
